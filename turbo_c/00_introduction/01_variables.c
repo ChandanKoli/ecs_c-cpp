@@ -1,10 +1,10 @@
 #include <stdio.h>
-int main()
+#include <conio.h>
+void main()
 {
     int a;
+    clrscr();
     a = 1;
     printf("the value of a is: %d\n", a);
-    return 0;
+    getch();
 }
-
-// converted
