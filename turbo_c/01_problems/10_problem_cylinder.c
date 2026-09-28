@@ -1,7 +1,10 @@
-#include<stdio.h>
-int main()
+#include <stdio.h>
+#include <conio.h>
+
+void main()
 {
     int h, r;
+    clrscr();
     printf("Enter the radius\n");
     scanf("%d", &r);
     printf("Enter the height\n");
@@ -12,6 +15,6 @@ int main()
     printf("And the Valume of Cylinder is %.3f\n", 3.14*r*r*h);
 
     /* printf("blah blah %d  yum yum %d is duh %f, b, y, f") the %LHS... print in the same order as on the RHS */
-    return 0;
+    
+    getch();
 }
-

@@ -1,9 +1,11 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <conio.h>
 
-int main()
+void main()
 {
     float p,r ;
     int t;
+    clrscr();
 
     printf("Enter Principal Amount \n" "Enter interest rate\n" "Enter time period\n");
     scanf("%f" "%f" "%d", &p, &r, &t);
@@ -11,6 +13,6 @@ int main()
 
 
     printf("The Value of Simple Interest is %f\n", (p*r*t)/100);
-    return 0;
+    
+    getch();
 }
-
