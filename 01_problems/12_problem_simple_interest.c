@@ -13,3 +13,5 @@ int main()
     printf("The Value of Simple Interest is %f\n", (p*r*t)/100);
     return 0;
 }
+
+// converted
