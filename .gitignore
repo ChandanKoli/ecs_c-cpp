@@ -1,0 +1,11 @@
+*
+!*.*
+!*/
+*.o
+*.out
+*.exe
+!*.c
+!*.h
+!*.md
+!*.json
+!.gitignore
