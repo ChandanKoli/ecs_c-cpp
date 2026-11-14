@@ -3,25 +3,19 @@
 
 void main()
 {
-    int i, j, k;
+    int trigger_value;
 
     clrscr();
 
-    printf("right to left pattern\n");
+    printf("Reading Hall effect trigger sensor value...\n");
+    printf("Enter the pressure value(0-255):");
 
-    for (i = 1; i <= 10; i++) {
-        /* Loop 1: Prints the spaces */
-        for (k = 10; k > i; k--) {
-            printf(" ");
-        }
+    scanf("%d", &trigger_value);
 
-        /* Loop 2: Prints the characters */
-        for (j = 1; j <= i; j++) {
-            printf("o");
-        }
-
-        /* Drops to the next line after finishing the row */
-        printf("\n");
+    if (trigger_value <= 55) {
+        printf("FIRE - Single bullet\n");
+    } else {
+        printf("FIRE - Multiple bullets\n");
     }
 
     getch();
